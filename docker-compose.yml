@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Backend Service (Node.js/Express)
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "3001:3001"
+    environment:
+      MONGO_URL: 'mongodb+srv://user_01:KGP8RV@cluster0.3obsxd7.mongodb.net/Home_Rentals?retryWrites=true&w=majority'
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
+
+  # Frontend Service (React)
+  client:
+    build:
+      context: ./client 
+      dockerfile: Dockerfile
+    container_name: client
+    ports:
+      - "3002:80"
+    depends_on:
+      - server
+    environment:
+      REACT_APP_API_URL: http://localhost:3001 # Point to backend service
+    volumes:
+      - ./client:/src/app
+      - /src/app/node_modules

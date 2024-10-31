@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@google-cloud/translate": "^8.1.0",
+    "@react-google-maps/api": "^2.19.3",
+    "@stripe/stripe-js": "^3.3.0",
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "esri-leaflet": "^3.0.12",
+    "esri-leaflet-geocoder": "^3.1.4",
+    "express-session": "^1.18.0",
+    "firebase": "^10.11.0",
+    "google-auth-library": "^9.7.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.15",
+    "passport": "^0.7.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pdfkit": "^0.15.0",
+    "prop-types": "^15.8.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-google-charts": "^4.0.1",
+    "react-rating-stars-component": "^2.2.0",
+    "redux-persist-transform-expire": "^0.0.2",
+    "sweetalert2": "^11.10.6",
+    "use-places-autocomplete": "^4.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
